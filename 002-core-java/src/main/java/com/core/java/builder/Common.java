@@ -25,8 +25,16 @@ public class Common {
 	}
 
 	public Company getCompany() {
-		Company company = Company.builder().id(1).name("May").address("Yangon").phone("09428181811")
-				.type(CompanyType.FOREIGN).size(CompanySize.SIZE_200).build();
+		//@formatter:off
+		Company company = Company.builder()
+				.id(1)
+				.name("May")
+				.address("Yangon")
+				.phone("09428181811")
+				.type(CompanyType.FOREIGN)
+				.size(CompanySize.SIZE_200)
+				.build();
+		//@formatter:on
 		return company;
 	}
 }
